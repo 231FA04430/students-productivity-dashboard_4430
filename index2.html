@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container" id="login">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Email or Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button onclick="login()">Submit</button>
+  </div>
+
+  <div class="dashboard" id="dashboard" style="display: none;">
+    <header>
+      <h1>Student Productivity Dashboard</h1>
+    </header>
+    <div class="content">
+      <div class="notes-section">
+        <h2>📝 To-Do List & Notes</h2>
+        <ul id="notesList"></ul>
+        <textarea id="noteInput" placeholder="Add a new note..."></textarea>
+        <button onclick="addNote()">Add Note</button>
+      </div>
+      <div class="calendar-section">
+        <h2>📅 Calendar</h2>
+        <div id="calendar"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
